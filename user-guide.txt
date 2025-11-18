@@ -1,0 +1,77 @@
+Creating a New Repository
+
+1. Open RepoRocket: Launch the app—you’ll see the "Create Repo" section on the left.
+
+2. Fill Required Fields:
+• Repo Name: Enter a unique name (e.g., reporocket-test-13000).
+• Access Token: Paste your GitHub PAT.
+• New Directory Path: Specify a local path (e.g., /home/cliff/reporocket-test-13000).
+
+3. Optional Fields:
+• Repo URL: Auto-filled after creation (view-only).
+• Branch Name: Defaults to main—edit if needed.
+• Description: Add a repo description.
+• Template: Choose empty, python, or nodejs for pre-filled files (e.g., .gitignore).
+• Private Repository: Check to make the repo private.
+• SSH Key Path/Content: For SSH-based Git operations (optional).
+• Clone Command/Remote Name: Auto-filled (view-only).
+• Username/Email: Used for Git commits—defaults to unknown if blank.
+• Last Commit Hash: Auto-filled after commits (view-only).
+• Notes: Add personal notes (not sent to GitHub).
+
+4. Launch: Click "Launch Repo"—RepoTinker will:
+• Create the local directory.
+• Initialize a Git repo with an initial README.md.
+• Apply the selected template.
+• Create the GitHub repo using your PAT.
+• Push the initial commit to GitHub.
+• Display a success message with the repo URL.
+Editing a Repository
+
+1. Browse Directory:• In the "Edit Repo" section, click "Browse" to select your repo’s local directory
+(e.g., /home/cliff/reporocket-test-13000).
+• Files will appear in the "Files" list (excludes .git).
+
+2. Edit Files:
+• Select a file (e.g., README.md)—its contents load in the text editor.
+• Make changes directly in the editor.
+
+3. Save Changes:
+• Click "Save File" to write changes to the local file.
+
+4. Commit & Push:
+• Click "Commit & Push"—RepoTinker will:
+• Stage all changes (git add .).
+• Commit with a message ("Update via RepoTinker").
+• Push to GitHub using your stored PAT—no prompts!
+• Success message confirms the push.
+
+Resetting the Form
+• Clear Form: Click "Clear Form" to reset all fields, the editor, and session credentials.
+• You’ll need to re-enter your PAT and username to commit/push again.
+
+Limitations
+• Git Version: Requires Git 2.28+ (for main branch support).
+• Logo Support: Only PNG/GIF logos (300x100px) are supported natively by Tkinter—
+JPEG won’t work.
+
+• Single Repo at a Time: RepoRocket manages one repo per session—clear the form to start
+a new one.
+• Internet Required: Needs an active internet connection to interact with GitHub.
+• No Advanced Git Features:
+• No branch switching, merging, or pull requests—basic commit/push only.
+• No Git history viewing—use a Git client for advanced operations.
+• Platform: Tested on Linux (e.g., Ubuntu)—Windows/Mac may need path adjustments (e.g.,
+C:\\Users\my-repo).
+• Error Handling:
+• Invalid PATs or duplicate repo names will show GitHub error messages.
+• Ensure your PAT has repo scope, or creation will fail.
+
+Additional Information
+
+System Requirements
+
+• OS: Linux (Ubuntu recommended), Windows, or macOS.
+• Python: 3.6+ (with tkinter and requests).
+• Git: 2.28+ (for main branch).• Dependencies:
+• python3-tk (for GUI).
