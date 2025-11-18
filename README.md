@@ -1,3 +1,4 @@
+![Repo Rocket Screenshot](repo1.png)
 # 🚀 Repo Rocket - Launch Your GitHub Repositories Like a Pro
 
 **Repo Rocket** is a sleek, user-friendly, cross-platform desktop application built with Python to dramatically streamline your GitHub workflow. Stop wrestling with the command line! Launch, edit, commit, and push with the speed of a rocket, all from one modern interface.
